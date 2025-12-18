@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CPP_000_const/CPP_000_const.vcxproj" />
+  <Project Path="CPP_001_자료형/CPP_001_자료형.vcxproj" />
+  <Project Path="CPP_002_멤버함수참조한정자/CPP_002_멤버함수참조한정자.vcxproj" />
+  <Project Path="CPP_003_상속접근제한지정자/CPP_003_상속접근제한지정자.vcxproj" />
+  <Project Path="CPP_004_포인터/CPP_004_포인터.vcxproj" />
+</Solution>
