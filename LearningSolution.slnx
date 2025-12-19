@@ -3,9 +3,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="CPP_000_const/CPP_000_const.vcxproj" />
-  <Project Path="CPP_001_자료형/CPP_001_자료형.vcxproj" />
-  <Project Path="CPP_002_멤버함수참조한정자/CPP_002_멤버함수참조한정자.vcxproj" />
-  <Project Path="CPP_003_상속접근제한지정자/CPP_003_상속접근제한지정자.vcxproj" />
-  <Project Path="CPP_004_포인터/CPP_004_포인터.vcxproj" />
+  <Project Path="CPP_000_const/CPP_000_const.vcxproj" Id="c18da36f-8056-434d-8c3f-076756e26127" />
+  <Project Path="CPP_001_자료형/CPP_001_자료형.vcxproj" Id="89def447-f353-4bed-8672-408372d43751" />
+  <Project Path="CPP_002_멤버함수참조한정자/CPP_002_멤버함수참조한정자.vcxproj" Id="38c2d759-eab8-432d-ad06-b71413804946" />
+  <Project Path="CPP_003_상속접근제한지정자/CPP_003_상속접근제한지정자.vcxproj" Id="3f3da9ea-48e6-4d05-af28-5f4db875a0e8" />
+  <Project Path="CPP_004_포인터/CPP_004_포인터.vcxproj" Id="f606a724-a4ac-4b29-b654-8d7591ac6a9c" />
 </Solution>

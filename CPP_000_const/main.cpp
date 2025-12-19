@@ -92,6 +92,26 @@ int main()
 		const const const int const const const const const const* const const const const const const WTF = &a; // ?????????
 		// 어이 없지만 문제 없는 코드.
 		// 그냥 const int* const 타입이다..
+
+		int* ptr = &a;
+		int* Otherptr = &b;
+		const int* const* const ConstPtrConstPtrConst = &ptr; // ok.
+		// 그럼 이 자료형 또한 문제 없이 추론 가능하다.
+		// const int* const 타입을 가리키며 const 포인터 자료형이다.
+		// 따라서 가리키는 대상을 수정할 수 없으며, 대상에 접근해 값을 바꿀수도 없다.
+		// 만약 *ConstPtrConstPtrConst로 접근한다면, 해당 타입은 const int* const가 되며,
+		// 마찬가지로 대상을 const int로 해석하며, 값을 변경할 수 없는 const 포인터 자료형이 된다.
+		
+		const int** const ConstPtrPtrConst = &ptr; // ok.
+
+		// *ConstPtrConstPtrConst = Otherptr; // error!
+		*ConstPtrPtrConst = Otherptr; // ok!
+		// 따라서 두 자료형은 상수성에 관해서는 엄연히 다른 타입이 된다.
+
+		int* const* const MutablePtr = &ptr; // ok.
+		// *MutablePtr = &Otherptr; // error.
+		**MutablePtr = 3; // ok!
+		// 그렇다.
 	}
 
 	return 0;
